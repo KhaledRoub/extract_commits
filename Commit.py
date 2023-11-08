@@ -34,8 +34,8 @@ def main(github_username, private_url):
 
 
 if __name__ == "__main__":
-    github_username ='KhaledRoub'
-    repo_name = "HTML-CSS"
+    github_username =''
+    repo_name = ""
     private_url = f"https://api.github.com/repos/{github_username}/{repo_name}/commits"
     main(github_username, private_url)
 
