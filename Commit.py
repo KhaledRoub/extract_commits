@@ -18,7 +18,7 @@ def get_data(github_username, private_url, tries=5):
 
 
 
-def json_to_file(json_content, file_path):
+def load_data(json_content, file_path):
 
     if type(json_content) == list:
         with open(file_path, "w") as file:
@@ -30,7 +30,7 @@ def json_to_file(json_content, file_path):
 
 def main(github_username, private_url):
     json_content = get_data(github_username, private_url)
-    json_to_file(json_content, "Output.txt")
+    load_data(json_content, "Output.txt")
 
 
 if __name__ == "__main__":
