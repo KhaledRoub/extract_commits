@@ -19,7 +19,6 @@ def get_data(github_username, private_url, tries=5):
 
 
 def load_data(json_content, file_path):
-
     if type(json_content) == list:
         with open(file_path, "w") as file:
             for term in json_content:
